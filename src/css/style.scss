@@ -297,7 +297,6 @@
     padding: 0 40px;
     display: flex;
     align-items: center;
-    gap: 25px;
     background-color: white;
     border-bottom: 1px solid rgb(245, 245, 245);
     position: relative;
@@ -306,13 +305,14 @@
 
     .kreditDropDown{
         position: absolute;
-        top: 66px;
-        left: 0;
-        width: 100%;
+        top: 65px;
+        left: -40px;
+        width: 100vw;
         height: 300px;
         display: none;
         background-color: white;
         border-top: 1px solid rgb(232, 232, 232);
+        cursor: default;
 
         .kreditLeft{
             width: 45%;
@@ -396,6 +396,7 @@
         font-size: 15px;
         cursor: pointer;
         padding: 24px 0;
+        padding-right: 25px;
         position: relative;
 
         &::after{
@@ -410,10 +411,10 @@
         }
 
         &:hover::after{
-            width: 100%;
+            width: 52px;
         }
 
-        &:hover + .kreditDropDown{
+        &:hover .kreditDropDown{
             display: flex;
         }
 
@@ -425,6 +426,7 @@
         font-size: 15px;
         cursor: pointer;
         padding: 24px 0;
+        padding-right: 25px;
         position: relative;
 
         &::after{
@@ -439,10 +441,10 @@
         }
 
         &:hover::after{
-            width: 100%;
+            width: 45px;
         }
 
-        &:hover + .ipotekaDropDown{
+        &:hover .ipotekaDropDown{
             display: flex;
         }
     }
@@ -450,13 +452,14 @@
     .ipotekaDropDown{
         position: absolute;
         top: 66px;
-        left: 0;
-        width: 100%;
+        left: -116px;
+        width: 100vw;
         height: 320px;
         display: flex;
         border-top: 1px solid rgb(232, 232, 232);
         display: none;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
+        cursor: default;
 
 
         .ipotekaLeft{
@@ -574,6 +577,7 @@
         font-size: 15px;
         cursor: pointer;
         padding: 24px 0;
+        padding-right: 25px;
         position: relative;
 
         &::after{
@@ -588,10 +592,10 @@
         }
 
         &:hover::after{
-            width: 100%;
+            width: 64px;
         }
 
-        &:hover + .depositDropDown{
+        &:hover .depositDropDown{
             display: flex;
         }
     }
@@ -599,8 +603,8 @@
     .depositDropDown{
         position: absolute;
         top: 66px;
-        left: 0;
-        width: 100%;
+        left: -186px;
+        width: 100vw;
         height: 140px;
         display: flex;
         gap: 150px;
@@ -609,6 +613,7 @@
         padding-left: 90px;
         padding-top: 40px;
         background-color: white;
+        cursor: default;
 
         a{
             font-size: 17px;
@@ -629,6 +634,7 @@
         font-size: 15px;
         cursor: pointer;
         padding: 24px 0;
+        padding-right: 25px;
         position: relative;
 
         &::after{
@@ -643,10 +649,10 @@
         }
 
         &:hover::after{
-            width: 100%;
+            width: 41px;
         }
 
-        &:hover + .cardDropDown{
+        &:hover .cardDropDown{
             display: flex;
         }
     }
@@ -654,8 +660,8 @@
     .cardDropDown{
         position: absolute;
         top: 66px;
-        left: 0;
-        width: 100%;
+        left: -275px;
+        width: 100vw;
         height: 110px;
         border-top: 1px solid rgb(232, 232, 232);
         display: none;
@@ -663,7 +669,8 @@
         padding-top: 40px;
         display: none;
         gap: 200px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
+        cursor: default;
 
         a{
             font-size: 17px;
@@ -678,6 +685,7 @@
         font-size: 15px;
         cursor: pointer;
         padding: 24px 0;
+        padding-right: 25px;
         position: relative;
 
         &::after{
@@ -692,10 +700,10 @@
         }
 
         &:hover::after{
-            width: 100%;
+            width: 94px;
         }
 
-        &:hover + .moneyDropDown{
+        &:hover .moneyDropDown{
             display: flex;
         }
 
@@ -704,8 +712,8 @@
     .moneyDropDown{
         position: absolute;
         top: 66px;
-        left: 0;
-        width: 100%;
+        left: -340px;
+        width: 100vw;
         height: 140px;
         gap: 150px;
         border-top: 1px solid rgb(232, 232, 232);
@@ -713,6 +721,7 @@
         padding-left: 90px;
         padding-top: 40px;
         background-color: white;
+        cursor: default;
 
         a{
             font-size: 17px;
@@ -733,6 +742,7 @@
         font-size: 15px;
         cursor: pointer;
         padding: 24px 0;
+        padding-right: 25px;
         position: relative;
 
         &::after{
@@ -747,10 +757,10 @@
         }
 
         &:hover::after{
-            width: 100%;
+            width: 67px;
         }
 
-        &:hover + .hesabDropDown{
+        &:hover .hesabDropDown{
             display: flex;
         }
     }
@@ -758,8 +768,8 @@
     .hesabDropDown{
         position: absolute;
         top: 66px;
-        left: 0;
-        width: 100%;
+        left: -460px;
+        width: 100vw;
         height: 186px;
         gap: 150px;
         border-top: 1px solid rgb(232, 232, 232);
@@ -767,6 +777,7 @@
         padding-left: 90px;
         padding-top: 40px;
         background-color: white;
+        cursor: default;
 
         a{
             font-size: 17px;
@@ -787,6 +798,7 @@
         font-size: 15px;
         cursor: pointer;
         padding: 24px 0;
+        padding-right: 25px;
         position: relative;
 
         &::after{
@@ -801,10 +813,10 @@
         }
 
         &:hover::after{
-            width: 100%;
+            width: 110px;
         }
 
-        &:hover + .servicesDropDown{
+        &:hover .servicesDropDown{
             display: flex;
         }
     }
@@ -812,13 +824,14 @@
     .servicesDropDown{
         position: absolute;
         top: 66px;
-        left: 0;
-        width: 100%;
+        left: -552px;
+        width: 100vw;
         height: 290px;
         display: flex;
         border-top: 1px solid rgb(232, 232, 232);
         display: none;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
+        cursor: default;
 
         .servicesLeft{
             width: 45%;
@@ -935,6 +948,7 @@
         font-size: 15px;
         cursor: pointer;
         padding: 24px 0;
+        padding-right: 25px;
         position: relative;
 
         &::after{
@@ -949,10 +963,10 @@
         }
 
         &:hover::after{
-            width: 100%;
+            width: 63px;
         }
 
-        &:hover + .bankDropDown{
+        &:hover .bankDropDown{
             display: flex;
         }
     }
@@ -960,13 +974,14 @@
     .bankDropDown{
         position: absolute;
         top: 66px;
-        left: 0;
-        width: 100%;
+        left: -686px;
+        width: 100vw;
         height: 290px;
         display: flex;
         border-top: 1px solid rgb(232, 232, 232);
         display: none;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
+        cursor: default;
 
         .bankLeft{
             width: 45%;
@@ -987,7 +1002,6 @@
             }
 
             &Column2{
-                
                 display: flex;
                 flex-direction: column;
                 gap: 13px;
@@ -1083,6 +1097,7 @@
         font-size: 15px;
         cursor: pointer;
         padding: 24px 0;
+        padding-right: 25px;
         position: relative;
 
         &::after{
@@ -1097,10 +1112,10 @@
         }
 
         &:hover::after{
-            width: 100%;
+            width: 48px;
         }
 
-        &:hover + .cashbackDropDown{
+        &:hover .cashbackDropDown{
             display: flex;
         }
     }
@@ -1108,15 +1123,16 @@
     .cashbackDropDown{
         position: absolute;
         top: 66px;
-        left: 0;
-        width: 100%;
+        left: -774px;
+        width: 100vw;
         height: 150px;
         gap: 150px;
         display: none;
         padding-left: 90px;
         padding-top: 40px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         border-top: 1px solid rgb(232, 232, 232);
+        cursor: default;
 
         a{
             font-size: 17px;

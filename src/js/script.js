@@ -2,7 +2,7 @@ const language = document.querySelector('.language');
 const lagnuageSelect = document.querySelector('.languageSelect');
 const chevDown = document.querySelector('.chevDown');
 
-language.addEventListener('click', function(){
+language.addEventListener('click', () => {
     if(lagnuageSelect.style.display == "block")
         lagnuageSelect.style.display = "none"
         else{
@@ -10,7 +10,7 @@ language.addEventListener('click', function(){
         } 
 })
 
-language.addEventListener('click', function(){
+language.addEventListener('click', () => {
     if(chevDown.style.transform == "rotate(-180deg)")
         chevDown.style.transform = "rotate(0deg)"
             else{

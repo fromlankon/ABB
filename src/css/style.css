@@ -254,7 +254,6 @@
   padding: 0 40px;
   display: flex;
   align-items: center;
-  gap: 25px;
   background-color: white;
   border-bottom: 1px solid rgb(245, 245, 245);
   position: relative;
@@ -265,13 +264,14 @@
 }
 .navBottom .kreditDropDown {
   position: absolute;
-  top: 66px;
-  left: 0;
-  width: 100%;
+  top: 65px;
+  left: -40px;
+  width: 100vw;
   height: 300px;
   display: none;
   background-color: white;
   border-top: 1px solid rgb(232, 232, 232);
+  cursor: default;
 }
 .navBottom .kreditDropDown .kreditLeft {
   width: 45%;
@@ -344,6 +344,7 @@
   font-size: 15px;
   cursor: pointer;
   padding: 24px 0;
+  padding-right: 25px;
   position: relative;
 }
 .navBottom .kredit::after {
@@ -357,9 +358,9 @@
   transition: 0.3s;
 }
 .navBottom .kredit:hover::after {
-  width: 100%;
+  width: 52px;
 }
-.navBottom .kredit:hover + .kreditDropDown {
+.navBottom .kredit:hover .kreditDropDown {
   display: flex;
 }
 .navBottom .ipoteka {
@@ -368,6 +369,7 @@
   font-size: 15px;
   cursor: pointer;
   padding: 24px 0;
+  padding-right: 25px;
   position: relative;
 }
 .navBottom .ipoteka::after {
@@ -381,21 +383,22 @@
   transition: 0.3s;
 }
 .navBottom .ipoteka:hover::after {
-  width: 100%;
+  width: 45px;
 }
-.navBottom .ipoteka:hover + .ipotekaDropDown {
+.navBottom .ipoteka:hover .ipotekaDropDown {
   display: flex;
 }
 .navBottom .ipotekaDropDown {
   position: absolute;
   top: 66px;
-  left: 0;
-  width: 100%;
+  left: -116px;
+  width: 100vw;
   height: 320px;
   display: flex;
   border-top: 1px solid rgb(232, 232, 232);
   display: none;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  cursor: default;
 }
 .navBottom .ipotekaDropDown .ipotekaLeft {
   width: 45%;
@@ -494,6 +497,7 @@
   font-size: 15px;
   cursor: pointer;
   padding: 24px 0;
+  padding-right: 25px;
   position: relative;
 }
 .navBottom .deposit::after {
@@ -507,16 +511,16 @@
   transition: 0.3s;
 }
 .navBottom .deposit:hover::after {
-  width: 100%;
+  width: 64px;
 }
-.navBottom .deposit:hover + .depositDropDown {
+.navBottom .deposit:hover .depositDropDown {
   display: flex;
 }
 .navBottom .depositDropDown {
   position: absolute;
   top: 66px;
-  left: 0;
-  width: 100%;
+  left: -186px;
+  width: 100vw;
   height: 140px;
   display: flex;
   gap: 150px;
@@ -525,6 +529,7 @@
   padding-left: 90px;
   padding-top: 40px;
   background-color: white;
+  cursor: default;
 }
 .navBottom .depositDropDown a {
   font-size: 17px;
@@ -542,6 +547,7 @@
   font-size: 15px;
   cursor: pointer;
   padding: 24px 0;
+  padding-right: 25px;
   position: relative;
 }
 .navBottom .card::after {
@@ -555,16 +561,16 @@
   transition: 0.3s;
 }
 .navBottom .card:hover::after {
-  width: 100%;
+  width: 41px;
 }
-.navBottom .card:hover + .cardDropDown {
+.navBottom .card:hover .cardDropDown {
   display: flex;
 }
 .navBottom .cardDropDown {
   position: absolute;
   top: 66px;
-  left: 0;
-  width: 100%;
+  left: -275px;
+  width: 100vw;
   height: 110px;
   border-top: 1px solid rgb(232, 232, 232);
   display: none;
@@ -572,7 +578,8 @@
   padding-top: 40px;
   display: none;
   gap: 200px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  cursor: default;
 }
 .navBottom .cardDropDown a {
   font-size: 17px;
@@ -585,6 +592,7 @@
   font-size: 15px;
   cursor: pointer;
   padding: 24px 0;
+  padding-right: 25px;
   position: relative;
 }
 .navBottom .moneyTransfer::after {
@@ -598,16 +606,16 @@
   transition: 0.3s;
 }
 .navBottom .moneyTransfer:hover::after {
-  width: 100%;
+  width: 94px;
 }
-.navBottom .moneyTransfer:hover + .moneyDropDown {
+.navBottom .moneyTransfer:hover .moneyDropDown {
   display: flex;
 }
 .navBottom .moneyDropDown {
   position: absolute;
   top: 66px;
-  left: 0;
-  width: 100%;
+  left: -340px;
+  width: 100vw;
   height: 140px;
   gap: 150px;
   border-top: 1px solid rgb(232, 232, 232);
@@ -615,6 +623,7 @@
   padding-left: 90px;
   padding-top: 40px;
   background-color: white;
+  cursor: default;
 }
 .navBottom .moneyDropDown a {
   font-size: 17px;
@@ -632,6 +641,7 @@
   font-size: 15px;
   cursor: pointer;
   padding: 24px 0;
+  padding-right: 25px;
   position: relative;
 }
 .navBottom .hesab::after {
@@ -645,16 +655,16 @@
   transition: 0.3s;
 }
 .navBottom .hesab:hover::after {
-  width: 100%;
+  width: 67px;
 }
-.navBottom .hesab:hover + .hesabDropDown {
+.navBottom .hesab:hover .hesabDropDown {
   display: flex;
 }
 .navBottom .hesabDropDown {
   position: absolute;
   top: 66px;
-  left: 0;
-  width: 100%;
+  left: -460px;
+  width: 100vw;
   height: 186px;
   gap: 150px;
   border-top: 1px solid rgb(232, 232, 232);
@@ -662,6 +672,7 @@
   padding-left: 90px;
   padding-top: 40px;
   background-color: white;
+  cursor: default;
 }
 .navBottom .hesabDropDown a {
   font-size: 17px;
@@ -679,6 +690,7 @@
   font-size: 15px;
   cursor: pointer;
   padding: 24px 0;
+  padding-right: 25px;
   position: relative;
 }
 .navBottom .services::after {
@@ -692,21 +704,22 @@
   transition: 0.3s;
 }
 .navBottom .services:hover::after {
-  width: 100%;
+  width: 110px;
 }
-.navBottom .services:hover + .servicesDropDown {
+.navBottom .services:hover .servicesDropDown {
   display: flex;
 }
 .navBottom .servicesDropDown {
   position: absolute;
   top: 66px;
-  left: 0;
-  width: 100%;
+  left: -552px;
+  width: 100vw;
   height: 290px;
   display: flex;
   border-top: 1px solid rgb(232, 232, 232);
   display: none;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  cursor: default;
 }
 .navBottom .servicesDropDown .servicesLeft {
   width: 45%;
@@ -805,6 +818,7 @@
   font-size: 15px;
   cursor: pointer;
   padding: 24px 0;
+  padding-right: 25px;
   position: relative;
 }
 .navBottom .bank::after {
@@ -818,21 +832,22 @@
   transition: 0.3s;
 }
 .navBottom .bank:hover::after {
-  width: 100%;
+  width: 63px;
 }
-.navBottom .bank:hover + .bankDropDown {
+.navBottom .bank:hover .bankDropDown {
   display: flex;
 }
 .navBottom .bankDropDown {
   position: absolute;
   top: 66px;
-  left: 0;
-  width: 100%;
+  left: -686px;
+  width: 100vw;
   height: 290px;
   display: flex;
   border-top: 1px solid rgb(232, 232, 232);
   display: none;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  cursor: default;
 }
 .navBottom .bankDropDown .bankLeft {
   width: 45%;
@@ -931,6 +946,7 @@
   font-size: 15px;
   cursor: pointer;
   padding: 24px 0;
+  padding-right: 25px;
   position: relative;
 }
 .navBottom .cashback::after {
@@ -944,23 +960,24 @@
   transition: 0.3s;
 }
 .navBottom .cashback:hover::after {
-  width: 100%;
+  width: 48px;
 }
-.navBottom .cashback:hover + .cashbackDropDown {
+.navBottom .cashback:hover .cashbackDropDown {
   display: flex;
 }
 .navBottom .cashbackDropDown {
   position: absolute;
   top: 66px;
-  left: 0;
-  width: 100%;
+  left: -774px;
+  width: 100vw;
   height: 150px;
   gap: 150px;
   display: none;
   padding-left: 90px;
   padding-top: 40px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-top: 1px solid rgb(232, 232, 232);
+  cursor: default;
 }
 .navBottom .cashbackDropDown a {
   font-size: 17px;
