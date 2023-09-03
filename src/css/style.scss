@@ -1,0 +1,1360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: SFProDisplayRegular;
+    src: url(../fonts/SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+    font-family: SFProDisplayLight;
+    src: url(../fonts/SF-Pro-Display-Light.otf);
+}
+
+@font-face {
+    font-family: SFProDisplayMedium;
+    src: url(../fonts/SF-Pro-Display-Medium.otf);
+}
+
+@font-face {
+    font-family: SFProDisplaySemiBold;
+    src: url(../fonts/SF-Pro-Display-Semibold.otf);
+}
+
+
+.navTop{
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F7F8;
+  
+
+    &Media{
+        display: none;
+        gap: 7px;
+        cursor: pointer;
+
+        p{
+            font-size: 14px;
+            font-family: SFProDisplayMedium;
+        }
+
+        .mediaChev{
+            font-size: 10px;
+            transform: translateY(2px);
+        }
+    }
+
+    &Left{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        a{
+            font-family: SFProDisplayLight;
+            font-size: 14px;
+            color: #767676;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .karyera{
+            padding: 6px 12px;
+            border: 1.5px solid #0056c1;
+            color: #0056c1;
+            border-radius: 40px;
+            font-family: SFProDisplayRegular;
+            transition: .4s;
+            text-decoration: none !important;
+
+            &:hover{
+                background-color: #0056c1;
+                color: white;
+            }
+        }
+    }
+
+    &Right{
+        display: flex;
+        gap: 25px;
+
+        .search{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+
+            p{
+                font-family: SFProDisplayLight;
+                font-size: 14px;
+                color: #767676;
+            }
+
+            .fa-magnifying-glass{
+                color: #acacac;
+                font-size: 12px;
+            }
+        }
+
+        .language{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+
+            .languageSelect{
+                position: absolute;
+                top: 32px;
+                left: -120px;
+                width: 160px;
+                height: 110px;
+                z-index: 10;
+                background-color: white;
+                box-shadow: 0 0 17px 0 #a19ba1;
+                display: none;
+
+                .selectTriangle{
+                    width: 12px;
+                    height: 12px;
+                    background-color: #ffffff;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    top: -6px;
+                    right: 25px;
+                }
+
+                .select1{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding-left: 14px;
+                    transition: .3s;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: rgb(245, 245, 245);
+                    }
+
+                    p{
+                        font-size: 16px;
+                        color: #262626;
+                    }
+
+                    img{
+                        width: 24px;
+                    }
+                }
+
+                .select2{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding-left: 14px;
+                    transition: .3s;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: rgb(245, 245, 245);
+                    }
+
+                    p{
+                        font-size: 16px;
+                        color: #262626;
+                    }
+
+                    img{
+                        width: 24px;
+                    }
+                }
+            }
+
+            div{
+                font-family: SFProDisplayLight;
+                font-size: 14px;
+                color: #595959;
+            }
+
+            .fa-chevron-down{
+                font-size: 10px;
+                color: #767676;
+                transition: .3s;
+            }
+        }
+
+        .number{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            user-select: none;
+
+            .fa-phone{
+                font-size: 15px;
+                color: #767676;
+            }
+
+            p{
+                font-family: SFProDisplayMedium;
+                font-size: 14px;
+                color: #626262;
+            }
+        }
+    }
+}
+
+.navMiddle{
+    width: 100%;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(245, 245, 245);
+
+    .fa-bars{
+        font-size: 30px;
+        display: none;
+        cursor: pointer;
+    }
+
+    &Left{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .logo{
+            cursor: pointer;
+        }
+
+        .logo img{
+            width: 111px;
+        }
+
+        .navMiddleLinks{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .link1, .link2{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                cursor: pointer;
+            }
+
+            .link2, .link3{
+                color: #a8a8a8;
+                transition: .3s;
+
+                &:hover{
+                    color: #262626;;
+                }
+            }
+            
+        }
+
+        .navMiddleLinks a{
+            font-family: SFProDisplayRegular;
+            color: #262626;
+            font-size: 15px;
+        }
+    }
+
+    &Right{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+
+        img{
+            width: 24px;
+        }
+
+        p{
+            font-family: SFProDisplayMedium;
+            color: #0056c1;
+            font-size: 15px;
+        }
+    }
+}
+
+.navBottom{
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: white;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    position: relative;
+    user-select: none;
+    z-index: 100;
+
+    .kreditDropDown{
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        display: none;
+        background-color: white;
+        border-top: 1px solid rgb(232, 232, 232);
+
+        .kreditLeft{
+            width: 45%;
+            display: flex;
+            gap: 150px;
+            padding-left: 90px;
+            padding-top: 40px;
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: calc(50% - 110px);
+                width: 1px;
+                height: 220px;
+                background-color: #ebebeb;
+            }
+
+            &Column{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                
+                a{
+                    font-size: 17px;
+                    color: #515151;
+                    font-family: SFProDisplayLight;
+                }
+            }
+        }
+
+        .kreditRight{
+            width: 55%;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            gap: 45px;
+
+            &2{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            .text1{
+                font-family: SFProDisplayRegular;
+                font-size: 24px;
+            }
+
+            .text2{
+                font-size: 16px;
+                color: #515151;
+                font-family: SFProDisplayLight;
+            }
+
+            .button1{
+                width: 156px;
+                height: 50px;
+                border: 1px solid black;
+                border-radius: 5px;
+                display: inline-block;
+                font-family: SFProDisplayRegular;
+                color: black;
+                transition: .3s;
+                text-align: center;
+                line-height: 50px;
+                transform: translateY(10px);
+
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .kredit{
+        font-family: SFProDisplayLight;
+        color: #17253a;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 24px 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #007aff;
+            transition: .3s;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+
+        &:hover + .kreditDropDown{
+            display: flex;
+        }
+
+    }
+
+    .ipoteka{
+        font-family: SFProDisplayLight;
+        color: #17253a;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 24px 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #007aff;
+            transition: .3s;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+
+        &:hover + .ipotekaDropDown{
+            display: flex;
+        }
+    }
+
+    .ipotekaDropDown{
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        height: 320px;
+        display: flex;
+        border-top: 1px solid rgb(232, 232, 232);
+        display: none;
+        background-color: white;
+
+
+        .ipotekaLeft{
+            width: 45%;
+            display: flex;
+            gap: 50px;
+            padding-left: 90px;
+            padding-top: 40px;
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: calc(50% - 110px);
+                width: 1px;
+                height: 220px;
+                background-color: #ebebeb;
+            }
+
+            &Column2{
+                
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                
+                a{
+                    font-size: 17px;
+                    color: #515151;
+                    font-family: SFProDisplayLight;
+                }
+
+                .text3{
+                    width: 250px;
+                }
+            }
+
+            &Column{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                
+                a{
+                    font-size: 17px;
+                    color: #515151;
+                    font-family: SFProDisplayLight;
+                }
+
+                .text3{
+                    width: 250px;
+                }
+
+                &Top{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+
+                &Bottom{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+            }
+        }
+
+        .ipotekaRight{
+            width: 55%;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            gap: 45px;
+
+            &2{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            .text1{
+                font-family: SFProDisplayRegular;
+                font-size: 24px;
+            }
+
+            .text2{
+                font-size: 16px;
+                color: #515151;
+                font-family: SFProDisplayLight;
+            }
+
+            .button1{
+                width: 156px;
+                height: 50px;
+                border: 1px solid black;
+                border-radius: 5px;
+                display: inline-block;
+                font-family: SFProDisplayRegular;
+                color: black;
+                transition: .3s;
+                text-align: center;
+                line-height: 50px;
+                transform: translateY(10px);
+
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .deposit{
+        font-family: SFProDisplayLight;
+        color: #17253a;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 24px 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #007aff;
+            transition: .3s;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+
+        &:hover + .depositDropDown{
+            display: flex;
+        }
+    }
+
+    .depositDropDown{
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        height: 140px;
+        display: flex;
+        gap: 150px;
+        border-top: 1px solid rgb(232, 232, 232);
+        display: none;
+        padding-left: 90px;
+        padding-top: 40px;
+        background-color: white;
+
+        a{
+            font-size: 17px;
+            color: #515151;
+            font-family: SFProDisplayLight;
+        }
+
+        .depositLeft, .depositRight{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .card{
+        font-family: SFProDisplayLight;
+        color: #17253a;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 24px 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #007aff;
+            transition: .3s;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+
+        &:hover + .cardDropDown{
+            display: flex;
+        }
+    }
+
+    .cardDropDown{
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        height: 110px;
+        border-top: 1px solid rgb(232, 232, 232);
+        display: none;
+        padding-left: 90px;
+        padding-top: 40px;
+        display: none;
+        gap: 200px;
+        background-color: white;
+
+        a{
+            font-size: 17px;
+            color: #515151;
+            font-family: SFProDisplayLight;
+        }
+    }
+
+    .moneyTransfer{
+        font-family: SFProDisplayLight;
+        color: #17253a;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 24px 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #007aff;
+            transition: .3s;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+
+        &:hover + .moneyDropDown{
+            display: flex;
+        }
+
+    }
+
+    .moneyDropDown{
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        height: 140px;
+        gap: 150px;
+        border-top: 1px solid rgb(232, 232, 232);
+        display: none;
+        padding-left: 90px;
+        padding-top: 40px;
+        background-color: white;
+
+        a{
+            font-size: 17px;
+            color: #515151;
+            font-family: SFProDisplayLight;
+        }
+
+        .moneyLeft, .moneyRight{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .hesab{
+        font-family: SFProDisplayLight;
+        color: #17253a;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 24px 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #007aff;
+            transition: .3s;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+
+        &:hover + .hesabDropDown{
+            display: flex;
+        }
+    }
+
+    .hesabDropDown{
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        height: 186px;
+        gap: 150px;
+        border-top: 1px solid rgb(232, 232, 232);
+        display: none;
+        padding-left: 90px;
+        padding-top: 40px;
+        background-color: white;
+
+        a{
+            font-size: 17px;
+            color: #515151;
+            font-family: SFProDisplayLight;
+        }
+
+        .hesabLeft, .hesabRight{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .services{
+        font-family: SFProDisplayLight;
+        color: #17253a;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 24px 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #007aff;
+            transition: .3s;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+
+        &:hover + .servicesDropDown{
+            display: flex;
+        }
+    }
+
+    .servicesDropDown{
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        height: 290px;
+        display: flex;
+        border-top: 1px solid rgb(232, 232, 232);
+        display: none;
+        background-color: white;
+
+        .servicesLeft{
+            width: 45%;
+            display: flex;
+            gap: 130px;
+            padding-left: 90px;
+            padding-top: 40px;
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: calc(50% - 110px);
+                width: 1px;
+                height: 220px;
+                background-color: #ebebeb;
+            }
+
+            &Column2{
+                
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                
+                a{
+                    font-size: 17px;
+                    color: #515151;
+                    font-family: SFProDisplayLight;
+                }
+
+                .text3{
+                    width: 250px;
+                }
+            }
+
+            &Column{
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                
+                a{
+                    font-size: 17px;
+                    color: #515151;
+                    font-family: SFProDisplayLight;
+                }
+
+                .text3{
+                    width: 250px;
+                }
+
+                &Top{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+
+                &Bottom{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+            }
+        }
+
+        .servicesRight{
+            width: 55%;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            gap: 45px;
+
+            &2{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            .text1{
+                font-family: SFProDisplayRegular;
+                font-size: 24px;
+            }
+
+            .text2{
+                font-size: 16px;
+                color: #515151;
+                font-family: SFProDisplayLight;
+            }
+
+            .button1{
+                width: 156px;
+                height: 50px;
+                border: 1px solid black;
+                border-radius: 5px;
+                display: inline-block;
+                font-family: SFProDisplayRegular;
+                color: black;
+                transition: .3s;
+                text-align: center;
+                line-height: 50px;
+                transform: translateY(10px);
+
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .bank{
+        font-family: SFProDisplayLight;
+        color: #17253a;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 24px 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #007aff;
+            transition: .3s;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+
+        &:hover + .bankDropDown{
+            display: flex;
+        }
+    }
+
+    .bankDropDown{
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        height: 290px;
+        display: flex;
+        border-top: 1px solid rgb(232, 232, 232);
+        display: none;
+        background-color: white;
+
+        .bankLeft{
+            width: 45%;
+            display: flex;
+            gap: 130px;
+            padding-left: 90px;
+            padding-top: 40px;
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: calc(50% - 110px);
+                width: 1px;
+                height: 220px;
+                background-color: #ebebeb;
+            }
+
+            &Column2{
+                
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                
+                a{
+                    font-size: 17px;
+                    color: #515151;
+                    font-family: SFProDisplayLight;
+                }
+
+                .text3{
+                    width: 250px;
+                }
+            }
+
+            &Column{
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                
+                a{
+                    font-size: 17px;
+                    color: #515151;
+                    font-family: SFProDisplayLight;
+                }
+
+                .text3{
+                    width: 250px;
+                }
+
+                &Top{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+
+                &Bottom{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+            }
+        }
+
+        .bankRight{
+            width: 55%;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            gap: 45px;
+
+            &2{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            .text1{
+                font-family: SFProDisplayRegular;
+                font-size: 24px;
+            }
+
+            .text2{
+                font-size: 16px;
+                color: #515151;
+                font-family: SFProDisplayLight;
+            }
+
+            .button1{
+                width: 156px;
+                height: 50px;
+                border: 1px solid black;
+                border-radius: 5px;
+                display: inline-block;
+                font-family: SFProDisplayRegular;
+                color: black;
+                transition: .3s;
+                text-align: center;
+                line-height: 50px;
+                transform: translateY(10px);
+
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .cashback{
+        font-family: SFProDisplayLight;
+        color: #17253a;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 24px 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #007aff;
+            transition: .3s;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+
+        &:hover + .cashbackDropDown{
+            display: flex;
+        }
+    }
+
+    .cashbackDropDown{
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        gap: 150px;
+        display: none;
+        padding-left: 90px;
+        padding-top: 40px;
+        background-color: white;
+        border-top: 1px solid rgb(232, 232, 232);
+
+        a{
+            font-size: 17px;
+            color: #515151;
+            font-family: SFProDisplayLight;
+        }
+
+        .cashbackLeft, .cashbackRight{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .company{
+        font-family: SFProDisplayLight;
+        color: #17253a;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 24px 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #007aff;
+            transition: .3s;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+    }
+}
+
+.section1{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(90deg, #E1EBFF 9.88%, #AFB9CD 92.09%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .leftSide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        width: 50%;
+        height: 100%;
+        transform: translateX(70px);
+
+        &Content{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .sliderButtons{
+                display: flex;
+                gap: 18px;
+                padding-top: 30px;
+
+                div{
+                    width: 34px;
+                    height: 4px;
+                    background-color: rgb(242, 242, 242);
+
+                    &:nth-child(4){
+                        background-color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+
+        .text4{
+            font-family: SFProDisplaySemiBold;
+            font-size: 45px;
+            line-height: 54px;
+            width: 400px;
+            color: #262626;
+        }
+    
+        .text5{
+            font-family: SFProDisplayRegular;
+            font-size: 18px;
+            color: #262626;
+        }
+    
+        .button2{
+            display: inline-block;
+            padding: 15px 0;
+            width: 160px;
+            text-align: center;
+            border: 1px solid #262626;
+            border-radius: 5px;
+            font-family: SFProDisplayRegular;
+            color: #262626;
+            transform: translateY(20px);
+            transition: .3s;
+
+            &:hover{
+                color: white;
+                background-color: #262626;
+            }
+        }
+
+    }
+
+    .rightSide{
+        width: 50%;
+        height: 100%;
+        padding-right: 10px;
+
+        &Img{
+            padding-left: 100px;
+            position: relative;
+            z-index: 100;
+
+            &::after{
+                content: "";
+                position: absolute;
+                left: 100px;
+                bottom: -250px;
+                width: 500px;
+                height: 500px;
+                background-color: rgb(255, 255, 255);
+                z-index: -100;
+                opacity: .1;
+                border-radius: 100%;      
+            }
+        }
+    }    
+}
+
+@media only screen and (max-width: 1090px) {
+    .navTopLeft{
+        display: none;
+    }
+
+    .navMiddleLeft .navMiddleLinks{
+        display: none;
+    }
+    
+    .navMiddleLeft .logo img{
+        width: 100%;
+        transform: translateY(4px);
+    }
+
+    .navMiddleRight{
+        display: none;
+    }
+
+    .navMiddleLeft i{
+        display: block;
+    }
+
+    .navBottom{
+        display: none;
+    }
+
+    .navTopMedia{
+        display: flex;
+    }
+
+    .navMiddle .fa-bars{
+        display: block;
+    }
+
+    .navMiddle{
+        padding: 12px 20px;
+    }
+
+    .navTop{
+        padding: 12px 20px;
+    }
+
+    .section1{
+        height: 900px;
+        flex-direction: column;
+    }
+
+    .section1 .leftSide{
+        width: 100%;
+        transform: translateX(0px);
+    }
+
+    .section1 .rightSide{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+    }
+
+    .leftSideContent{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section1 .text4{
+        text-align: center;
+        width: 600px !important;
+    }
+
+    .rightSide .rightSideImg{
+        padding-left: 0;
+    }
+
+    .rightSideImg::after{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    
+    .section1 .text4{
+        font-size: 30px !important;
+        width: 450px !important;
+        line-height: 40px !important;
+    }
+
+    .rightSideImg img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .section1 .text4{
+        font-size: 18px !important;
+        width: 350px !important;
+        line-height: 24px !important;
+    }
+
+    .rightSideImg img{
+        width: 100%;
+    }
+}

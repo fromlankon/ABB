@@ -1,0 +1,1163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: SFProDisplayRegular;
+  src: url(../fonts/SF-Pro-Display-Regular.otf);
+}
+@font-face {
+  font-family: SFProDisplayLight;
+  src: url(../fonts/SF-Pro-Display-Light.otf);
+}
+@font-face {
+  font-family: SFProDisplayMedium;
+  src: url(../fonts/SF-Pro-Display-Medium.otf);
+}
+@font-face {
+  font-family: SFProDisplaySemiBold;
+  src: url(../fonts/SF-Pro-Display-Semibold.otf);
+}
+.navTop {
+  width: 100%;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F6F7F8;
+}
+.navTopMedia {
+  display: none;
+  gap: 7px;
+  cursor: pointer;
+}
+.navTopMedia p {
+  font-size: 14px;
+  font-family: SFProDisplayMedium;
+}
+.navTopMedia .mediaChev {
+  font-size: 10px;
+  transform: translateY(2px);
+}
+.navTopLeft {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.navTopLeft a {
+  font-family: SFProDisplayLight;
+  font-size: 14px;
+  color: #767676;
+}
+.navTopLeft a:hover {
+  text-decoration: underline;
+}
+.navTopLeft .karyera {
+  padding: 6px 12px;
+  border: 1.5px solid #0056c1;
+  color: #0056c1;
+  border-radius: 40px;
+  font-family: SFProDisplayRegular;
+  transition: 0.4s;
+  text-decoration: none !important;
+}
+.navTopLeft .karyera:hover {
+  background-color: #0056c1;
+  color: white;
+}
+.navTopRight {
+  display: flex;
+  gap: 25px;
+}
+.navTopRight .search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.navTopRight .search p {
+  font-family: SFProDisplayLight;
+  font-size: 14px;
+  color: #767676;
+}
+.navTopRight .search .fa-magnifying-glass {
+  color: #acacac;
+  font-size: 12px;
+}
+.navTopRight .language {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.navTopRight .language .languageSelect {
+  position: absolute;
+  top: 32px;
+  left: -120px;
+  width: 160px;
+  height: 110px;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 0 17px 0 #a19ba1;
+  display: none;
+}
+.navTopRight .language .languageSelect .selectTriangle {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -6px;
+  right: 25px;
+}
+.navTopRight .language .languageSelect .select1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 14px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.navTopRight .language .languageSelect .select1:hover {
+  background-color: rgb(245, 245, 245);
+}
+.navTopRight .language .languageSelect .select1 p {
+  font-size: 16px;
+  color: #262626;
+}
+.navTopRight .language .languageSelect .select1 img {
+  width: 24px;
+}
+.navTopRight .language .languageSelect .select2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 14px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.navTopRight .language .languageSelect .select2:hover {
+  background-color: rgb(245, 245, 245);
+}
+.navTopRight .language .languageSelect .select2 p {
+  font-size: 16px;
+  color: #262626;
+}
+.navTopRight .language .languageSelect .select2 img {
+  width: 24px;
+}
+.navTopRight .language div {
+  font-family: SFProDisplayLight;
+  font-size: 14px;
+  color: #595959;
+}
+.navTopRight .language .fa-chevron-down {
+  font-size: 10px;
+  color: #767676;
+  transition: 0.3s;
+}
+.navTopRight .number {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.navTopRight .number .fa-phone {
+  font-size: 15px;
+  color: #767676;
+}
+.navTopRight .number p {
+  font-family: SFProDisplayMedium;
+  font-size: 14px;
+  color: #626262;
+}
+
+.navMiddle {
+  width: 100%;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+.navMiddle .fa-bars {
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+}
+.navMiddleLeft {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.navMiddleLeft .logo {
+  cursor: pointer;
+}
+.navMiddleLeft .logo img {
+  width: 111px;
+}
+.navMiddleLeft .navMiddleLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navMiddleLeft .navMiddleLinks .link1, .navMiddleLeft .navMiddleLinks .link2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.navMiddleLeft .navMiddleLinks .link2, .navMiddleLeft .navMiddleLinks .link3 {
+  color: #a8a8a8;
+  transition: 0.3s;
+}
+.navMiddleLeft .navMiddleLinks .link2:hover, .navMiddleLeft .navMiddleLinks .link3:hover {
+  color: #262626;
+}
+.navMiddleLeft .navMiddleLinks a {
+  font-family: SFProDisplayRegular;
+  color: #262626;
+  font-size: 15px;
+}
+.navMiddleRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.navMiddleRight img {
+  width: 24px;
+}
+.navMiddleRight p {
+  font-family: SFProDisplayMedium;
+  color: #0056c1;
+  font-size: 15px;
+}
+
+.navBottom {
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background-color: white;
+  border-bottom: 1px solid rgb(245, 245, 245);
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  z-index: 100;
+}
+.navBottom .kreditDropDown {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  display: none;
+  background-color: white;
+  border-top: 1px solid rgb(232, 232, 232);
+}
+.navBottom .kreditDropDown .kreditLeft {
+  width: 45%;
+  display: flex;
+  gap: 150px;
+  padding-left: 90px;
+  padding-top: 40px;
+  position: relative;
+}
+.navBottom .kreditDropDown .kreditLeft::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: calc(50% - 110px);
+  width: 1px;
+  height: 220px;
+  background-color: #ebebeb;
+}
+.navBottom .kreditDropDown .kreditLeftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.navBottom .kreditDropDown .kreditLeftColumn a {
+  font-size: 17px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .kreditDropDown .kreditRight {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  gap: 45px;
+}
+.navBottom .kreditDropDown .kreditRight2 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.navBottom .kreditDropDown .kreditRight .text1 {
+  font-family: SFProDisplayRegular;
+  font-size: 24px;
+}
+.navBottom .kreditDropDown .kreditRight .text2 {
+  font-size: 16px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .kreditDropDown .kreditRight .button1 {
+  width: 156px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  font-family: SFProDisplayRegular;
+  color: black;
+  transition: 0.3s;
+  text-align: center;
+  line-height: 50px;
+  transform: translateY(10px);
+}
+.navBottom .kreditDropDown .kreditRight .button1:hover {
+  background-color: black;
+  color: white;
+}
+.navBottom .kredit {
+  font-family: SFProDisplayLight;
+  color: #17253a;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 24px 0;
+  position: relative;
+}
+.navBottom .kredit::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #007aff;
+  transition: 0.3s;
+}
+.navBottom .kredit:hover::after {
+  width: 100%;
+}
+.navBottom .kredit:hover + .kreditDropDown {
+  display: flex;
+}
+.navBottom .ipoteka {
+  font-family: SFProDisplayLight;
+  color: #17253a;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 24px 0;
+  position: relative;
+}
+.navBottom .ipoteka::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #007aff;
+  transition: 0.3s;
+}
+.navBottom .ipoteka:hover::after {
+  width: 100%;
+}
+.navBottom .ipoteka:hover + .ipotekaDropDown {
+  display: flex;
+}
+.navBottom .ipotekaDropDown {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  border-top: 1px solid rgb(232, 232, 232);
+  display: none;
+  background-color: white;
+}
+.navBottom .ipotekaDropDown .ipotekaLeft {
+  width: 45%;
+  display: flex;
+  gap: 50px;
+  padding-left: 90px;
+  padding-top: 40px;
+  position: relative;
+}
+.navBottom .ipotekaDropDown .ipotekaLeft::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: calc(50% - 110px);
+  width: 1px;
+  height: 220px;
+  background-color: #ebebeb;
+}
+.navBottom .ipotekaDropDown .ipotekaLeftColumn2 {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.navBottom .ipotekaDropDown .ipotekaLeftColumn2 a {
+  font-size: 17px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .ipotekaDropDown .ipotekaLeftColumn2 .text3 {
+  width: 250px;
+}
+.navBottom .ipotekaDropDown .ipotekaLeftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.navBottom .ipotekaDropDown .ipotekaLeftColumn a {
+  font-size: 17px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .ipotekaDropDown .ipotekaLeftColumn .text3 {
+  width: 250px;
+}
+.navBottom .ipotekaDropDown .ipotekaLeftColumnTop {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.navBottom .ipotekaDropDown .ipotekaLeftColumnBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.navBottom .ipotekaDropDown .ipotekaRight {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  gap: 45px;
+}
+.navBottom .ipotekaDropDown .ipotekaRight2 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.navBottom .ipotekaDropDown .ipotekaRight .text1 {
+  font-family: SFProDisplayRegular;
+  font-size: 24px;
+}
+.navBottom .ipotekaDropDown .ipotekaRight .text2 {
+  font-size: 16px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .ipotekaDropDown .ipotekaRight .button1 {
+  width: 156px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  font-family: SFProDisplayRegular;
+  color: black;
+  transition: 0.3s;
+  text-align: center;
+  line-height: 50px;
+  transform: translateY(10px);
+}
+.navBottom .ipotekaDropDown .ipotekaRight .button1:hover {
+  background-color: black;
+  color: white;
+}
+.navBottom .deposit {
+  font-family: SFProDisplayLight;
+  color: #17253a;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 24px 0;
+  position: relative;
+}
+.navBottom .deposit::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #007aff;
+  transition: 0.3s;
+}
+.navBottom .deposit:hover::after {
+  width: 100%;
+}
+.navBottom .deposit:hover + .depositDropDown {
+  display: flex;
+}
+.navBottom .depositDropDown {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  gap: 150px;
+  border-top: 1px solid rgb(232, 232, 232);
+  display: none;
+  padding-left: 90px;
+  padding-top: 40px;
+  background-color: white;
+}
+.navBottom .depositDropDown a {
+  font-size: 17px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .depositDropDown .depositLeft, .navBottom .depositDropDown .depositRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.navBottom .card {
+  font-family: SFProDisplayLight;
+  color: #17253a;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 24px 0;
+  position: relative;
+}
+.navBottom .card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #007aff;
+  transition: 0.3s;
+}
+.navBottom .card:hover::after {
+  width: 100%;
+}
+.navBottom .card:hover + .cardDropDown {
+  display: flex;
+}
+.navBottom .cardDropDown {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  border-top: 1px solid rgb(232, 232, 232);
+  display: none;
+  padding-left: 90px;
+  padding-top: 40px;
+  display: none;
+  gap: 200px;
+  background-color: white;
+}
+.navBottom .cardDropDown a {
+  font-size: 17px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .moneyTransfer {
+  font-family: SFProDisplayLight;
+  color: #17253a;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 24px 0;
+  position: relative;
+}
+.navBottom .moneyTransfer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #007aff;
+  transition: 0.3s;
+}
+.navBottom .moneyTransfer:hover::after {
+  width: 100%;
+}
+.navBottom .moneyTransfer:hover + .moneyDropDown {
+  display: flex;
+}
+.navBottom .moneyDropDown {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  gap: 150px;
+  border-top: 1px solid rgb(232, 232, 232);
+  display: none;
+  padding-left: 90px;
+  padding-top: 40px;
+  background-color: white;
+}
+.navBottom .moneyDropDown a {
+  font-size: 17px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .moneyDropDown .moneyLeft, .navBottom .moneyDropDown .moneyRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.navBottom .hesab {
+  font-family: SFProDisplayLight;
+  color: #17253a;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 24px 0;
+  position: relative;
+}
+.navBottom .hesab::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #007aff;
+  transition: 0.3s;
+}
+.navBottom .hesab:hover::after {
+  width: 100%;
+}
+.navBottom .hesab:hover + .hesabDropDown {
+  display: flex;
+}
+.navBottom .hesabDropDown {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 186px;
+  gap: 150px;
+  border-top: 1px solid rgb(232, 232, 232);
+  display: none;
+  padding-left: 90px;
+  padding-top: 40px;
+  background-color: white;
+}
+.navBottom .hesabDropDown a {
+  font-size: 17px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .hesabDropDown .hesabLeft, .navBottom .hesabDropDown .hesabRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.navBottom .services {
+  font-family: SFProDisplayLight;
+  color: #17253a;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 24px 0;
+  position: relative;
+}
+.navBottom .services::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #007aff;
+  transition: 0.3s;
+}
+.navBottom .services:hover::after {
+  width: 100%;
+}
+.navBottom .services:hover + .servicesDropDown {
+  display: flex;
+}
+.navBottom .servicesDropDown {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 290px;
+  display: flex;
+  border-top: 1px solid rgb(232, 232, 232);
+  display: none;
+  background-color: white;
+}
+.navBottom .servicesDropDown .servicesLeft {
+  width: 45%;
+  display: flex;
+  gap: 130px;
+  padding-left: 90px;
+  padding-top: 40px;
+  position: relative;
+}
+.navBottom .servicesDropDown .servicesLeft::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: calc(50% - 110px);
+  width: 1px;
+  height: 220px;
+  background-color: #ebebeb;
+}
+.navBottom .servicesDropDown .servicesLeftColumn2 {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.navBottom .servicesDropDown .servicesLeftColumn2 a {
+  font-size: 17px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .servicesDropDown .servicesLeftColumn2 .text3 {
+  width: 250px;
+}
+.navBottom .servicesDropDown .servicesLeftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.navBottom .servicesDropDown .servicesLeftColumn a {
+  font-size: 17px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .servicesDropDown .servicesLeftColumn .text3 {
+  width: 250px;
+}
+.navBottom .servicesDropDown .servicesLeftColumnTop {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.navBottom .servicesDropDown .servicesLeftColumnBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.navBottom .servicesDropDown .servicesRight {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  gap: 45px;
+}
+.navBottom .servicesDropDown .servicesRight2 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.navBottom .servicesDropDown .servicesRight .text1 {
+  font-family: SFProDisplayRegular;
+  font-size: 24px;
+}
+.navBottom .servicesDropDown .servicesRight .text2 {
+  font-size: 16px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .servicesDropDown .servicesRight .button1 {
+  width: 156px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  font-family: SFProDisplayRegular;
+  color: black;
+  transition: 0.3s;
+  text-align: center;
+  line-height: 50px;
+  transform: translateY(10px);
+}
+.navBottom .servicesDropDown .servicesRight .button1:hover {
+  background-color: black;
+  color: white;
+}
+.navBottom .bank {
+  font-family: SFProDisplayLight;
+  color: #17253a;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 24px 0;
+  position: relative;
+}
+.navBottom .bank::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #007aff;
+  transition: 0.3s;
+}
+.navBottom .bank:hover::after {
+  width: 100%;
+}
+.navBottom .bank:hover + .bankDropDown {
+  display: flex;
+}
+.navBottom .bankDropDown {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 290px;
+  display: flex;
+  border-top: 1px solid rgb(232, 232, 232);
+  display: none;
+  background-color: white;
+}
+.navBottom .bankDropDown .bankLeft {
+  width: 45%;
+  display: flex;
+  gap: 130px;
+  padding-left: 90px;
+  padding-top: 40px;
+  position: relative;
+}
+.navBottom .bankDropDown .bankLeft::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: calc(50% - 110px);
+  width: 1px;
+  height: 220px;
+  background-color: #ebebeb;
+}
+.navBottom .bankDropDown .bankLeftColumn2 {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.navBottom .bankDropDown .bankLeftColumn2 a {
+  font-size: 17px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .bankDropDown .bankLeftColumn2 .text3 {
+  width: 250px;
+}
+.navBottom .bankDropDown .bankLeftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.navBottom .bankDropDown .bankLeftColumn a {
+  font-size: 17px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .bankDropDown .bankLeftColumn .text3 {
+  width: 250px;
+}
+.navBottom .bankDropDown .bankLeftColumnTop {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.navBottom .bankDropDown .bankLeftColumnBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.navBottom .bankDropDown .bankRight {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  gap: 45px;
+}
+.navBottom .bankDropDown .bankRight2 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.navBottom .bankDropDown .bankRight .text1 {
+  font-family: SFProDisplayRegular;
+  font-size: 24px;
+}
+.navBottom .bankDropDown .bankRight .text2 {
+  font-size: 16px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .bankDropDown .bankRight .button1 {
+  width: 156px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  font-family: SFProDisplayRegular;
+  color: black;
+  transition: 0.3s;
+  text-align: center;
+  line-height: 50px;
+  transform: translateY(10px);
+}
+.navBottom .bankDropDown .bankRight .button1:hover {
+  background-color: black;
+  color: white;
+}
+.navBottom .cashback {
+  font-family: SFProDisplayLight;
+  color: #17253a;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 24px 0;
+  position: relative;
+}
+.navBottom .cashback::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #007aff;
+  transition: 0.3s;
+}
+.navBottom .cashback:hover::after {
+  width: 100%;
+}
+.navBottom .cashback:hover + .cashbackDropDown {
+  display: flex;
+}
+.navBottom .cashbackDropDown {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  gap: 150px;
+  display: none;
+  padding-left: 90px;
+  padding-top: 40px;
+  background-color: white;
+  border-top: 1px solid rgb(232, 232, 232);
+}
+.navBottom .cashbackDropDown a {
+  font-size: 17px;
+  color: #515151;
+  font-family: SFProDisplayLight;
+}
+.navBottom .cashbackDropDown .cashbackLeft, .navBottom .cashbackDropDown .cashbackRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.navBottom .company {
+  font-family: SFProDisplayLight;
+  color: #17253a;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 24px 0;
+  position: relative;
+}
+.navBottom .company::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #007aff;
+  transition: 0.3s;
+}
+.navBottom .company:hover::after {
+  width: 100%;
+}
+
+.section1 {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(90deg, #E1EBFF 9.88%, #AFB9CD 92.09%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section1 .leftSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 50%;
+  height: 100%;
+  transform: translateX(70px);
+}
+.section1 .leftSideContent {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section1 .leftSideContent .sliderButtons {
+  display: flex;
+  gap: 18px;
+  padding-top: 30px;
+}
+.section1 .leftSideContent .sliderButtons div {
+  width: 34px;
+  height: 4px;
+  background-color: rgb(242, 242, 242);
+}
+.section1 .leftSideContent .sliderButtons div:nth-child(4) {
+  background-color: rgb(255, 255, 255);
+}
+.section1 .leftSide .text4 {
+  font-family: SFProDisplaySemiBold;
+  font-size: 45px;
+  line-height: 54px;
+  width: 400px;
+  color: #262626;
+}
+.section1 .leftSide .text5 {
+  font-family: SFProDisplayRegular;
+  font-size: 18px;
+  color: #262626;
+}
+.section1 .leftSide .button2 {
+  display: inline-block;
+  padding: 15px 0;
+  width: 160px;
+  text-align: center;
+  border: 1px solid #262626;
+  border-radius: 5px;
+  font-family: SFProDisplayRegular;
+  color: #262626;
+  transform: translateY(20px);
+  transition: 0.3s;
+}
+.section1 .leftSide .button2:hover {
+  color: white;
+  background-color: #262626;
+}
+.section1 .rightSide {
+  width: 50%;
+  height: 100%;
+  padding-right: 10px;
+}
+.section1 .rightSideImg {
+  padding-left: 100px;
+  position: relative;
+  z-index: 100;
+}
+.section1 .rightSideImg::after {
+  content: "";
+  position: absolute;
+  left: 100px;
+  bottom: -250px;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  z-index: -100;
+  opacity: 0.1;
+  border-radius: 100%;
+}
+
+@media only screen and (max-width: 1090px) {
+  .navTopLeft {
+    display: none;
+  }
+  .navMiddleLeft .navMiddleLinks {
+    display: none;
+  }
+  .navMiddleLeft .logo img {
+    width: 100%;
+    transform: translateY(4px);
+  }
+  .navMiddleRight {
+    display: none;
+  }
+  .navMiddleLeft i {
+    display: block;
+  }
+  .navBottom {
+    display: none;
+  }
+  .navTopMedia {
+    display: flex;
+  }
+  .navMiddle .fa-bars {
+    display: block;
+  }
+  .navMiddle {
+    padding: 12px 20px;
+  }
+  .navTop {
+    padding: 12px 20px;
+  }
+  .section1 {
+    height: 900px;
+    flex-direction: column;
+  }
+  .section1 .leftSide {
+    width: 100%;
+    transform: translateX(0px);
+  }
+  .section1 .rightSide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .leftSideContent {
+    align-items: center;
+    justify-content: center;
+  }
+  .section1 .text4 {
+    text-align: center;
+    width: 600px !important;
+  }
+  .rightSide .rightSideImg {
+    padding-left: 0;
+  }
+  .rightSideImg::after {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .section1 .text4 {
+    font-size: 30px !important;
+    width: 450px !important;
+    line-height: 40px !important;
+  }
+  .rightSideImg img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .section1 .text4 {
+    font-size: 18px !important;
+    width: 350px !important;
+    line-height: 24px !important;
+  }
+  .rightSideImg img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
